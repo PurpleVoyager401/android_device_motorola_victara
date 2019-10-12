@@ -56,7 +56,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
-    libbt-vendor
+    libbt-vendor \
+    audio.bluetooth.default \
+    android.hardware.bluetooth.audio@2.0-impl
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
