@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
+<<<<<<< HEAD
  * Copyright (c) 2009, The Android Open Source Project
+=======
+ * Copyright (c) 2016, The Android Open Source Project
+>>>>>>> 13fe3397 (msm8974-common: Set a default Settings.Global.DEVICE_NAME)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,4 +23,8 @@
 <resources>
     <bool name="def_bluetooth_on">false</bool>
     <bool name="def_screen_brightness_automatic_mode">true</bool>
+
+    <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
+    <string name="def_device_name_simple">Moto X 2014</string>
+
 </resources>
