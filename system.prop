@@ -62,6 +62,7 @@ dalvik.vm.heapminfree=2m
 dalvik.vm.heapsize=512m
 dalvik.vm.heapstartsize=16m
 dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.systemuicompilerfilter=speed
 
 ## GPS
 persist.mot.gps.smart_battery=1
