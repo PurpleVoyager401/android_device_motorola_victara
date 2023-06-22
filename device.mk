@@ -72,8 +72,7 @@ PRODUCT_PACKAGES += \
     camera.msm8974 \
     libbson \
     libshim_camera \
-    libshims_sensorlistener \
-    Camera2
+    libshims_sensorlistener
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/hdrhax:$(TARGET_COPY_OUT_VENDOR)/etc/hdrhax
