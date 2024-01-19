@@ -65,6 +65,9 @@ dalvik.vm.heapstartsize=16m
 dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.systemuicompilerfilter=speed
 
+# Disable media transcoding
+debug.stagefright.ccodec=0
+
 ## GPS
 persist.mot.gps.smart_battery=1
 
