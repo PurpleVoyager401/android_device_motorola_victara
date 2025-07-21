@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
     libbson \
     libshim_camera \
     libshims_sensorlistener \
-    Snap
+    Camera2
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/hdrhax:$(TARGET_COPY_OUT_VENDOR)/etc/hdrhax
