@@ -23,6 +23,9 @@ ro.qualcomm.bluetooth.sap=false
 ro.bluetooth.hfp.ver=1.7
 ro.boot.btmacaddr=00:00:00:00:00:00
 
+# BPF
+ro.kernel.ebpf.supported=false
+
 ## Camera
 camera2.portability.force_api=1
 
