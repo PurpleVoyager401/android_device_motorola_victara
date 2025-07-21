@@ -72,6 +72,10 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 ## QCOM
 ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 
+
+# Recovery
+persist.vendor.recovery_update=false
+
 ## RIL
 DEVICE_PROVISIONED=1
 persist.data.netmgrd.qos.enable=true
