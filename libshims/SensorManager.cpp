@@ -208,7 +208,7 @@ sp<SensorEventQueue> SensorManager::createEventQueue(String8 packageName, int mo
     Mutex::Autolock _l(mLock);
     while (assertStateLocked() == NO_ERROR) {
         sp<ISensorEventConnection> connection =
-                mSensorServer->createSensorEventConnection(packageName, mode, mOpPackageName);
+                mSensorServer->createSensorEventConnection(packageName, mode, mOpPackageName, String16());
         if (connection == NULL) {
             // SensorService just died or the app doesn't have required permissions.
             ALOGE("createEventQueue: connection is NULL.");
