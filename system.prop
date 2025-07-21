@@ -88,10 +88,10 @@ persist.radio.no_wait_for_card=1
 persist.radio.oem_ind_to_both=false
 persist.radio.relay_oprt_change=1
 rild.libargs=-d /dev/smd0
-rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ril.subscription.types=NV,RUIM
 ro.data.large_tcp_window_size=true
 ro.use_data_netmgrd=true
+vendor.rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 
 ## Time services
 persist.timed.enable=true
