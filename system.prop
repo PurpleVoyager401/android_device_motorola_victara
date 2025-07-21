@@ -103,6 +103,10 @@ vendor.rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 persist.sys.binary_xml=false
 ro.vndk.version=current
 
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=MSM8974
+
 ## Time services
 persist.timed.enable=true
 
