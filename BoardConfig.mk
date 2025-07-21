@@ -111,6 +111,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 BOARD_RAMDISK_USE_XZ := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
 HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_CONFIG := lineageos_victara_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8974
 
@@ -141,6 +142,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Vendor
 -include vendor/motorola/victara/BoardConfigVendor.mk
