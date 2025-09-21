@@ -23,8 +23,8 @@ LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_SRC_FILES := SensorManager.cpp moto_camera_misc.c
-LOCAL_SHARED_LIBRARIES := libutils libgui liblog libbinder libsensor
+LOCAL_SRC_FILES := SensorManager.cpp moto_camera_misc.c camera_shim.cpp
+LOCAL_SHARED_LIBRARIES := libutils libgui liblog libbinder libsensor libnativehelper libmedia libstagefright
 LOCAL_MODULE := libshim_camera
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)

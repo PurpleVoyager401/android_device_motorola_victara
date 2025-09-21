@@ -55,6 +55,7 @@ USE_XML_AUDIO_POLICY_CONF := 1
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/bin/mpdecision|libshims_atomic.so \
     /system/vendor/bin/thermal-engine|libshims_thermal.so \
+    /system/lib/libcamerabgproc-jni.so|libshim_camera.so \
     /system/lib/libjscore.so|libshim_camera.so \
     /system/lib/libjustshoot.so|libshim_camera.so \
     /system/lib/libmot_sensorlistener.so|libshims_sensorlistener.so \
