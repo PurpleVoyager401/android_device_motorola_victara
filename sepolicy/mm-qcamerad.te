@@ -10,3 +10,5 @@ allow mm-qcamerad system_server:unix_stream_socket rw_socket_perms;
 allow mm-qcamerad vendor_file:file execmod;
 allow mm-qcamerad system_lib_file:file execmod;
 allow mm-qcamerad mpctl_socket:dir search;
+
+allow mm-qcamerad default_prop:file { getattr open read };

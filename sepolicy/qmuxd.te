@@ -1,0 +1,2 @@
+allow qmuxd default_prop:file { getattr open read };
+allow qmuxd radio_prop:file { getattr open read };

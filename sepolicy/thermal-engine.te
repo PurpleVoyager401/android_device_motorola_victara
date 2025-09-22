@@ -3,3 +3,5 @@ allow thermal-engine sysfs_battery_supply:file r_file_perms;
 allow thermal-engine sysfs_battery_supply:lnk_file read;
 allow thermal-engine sysfs_batteryinfo:dir search;
 allow thermal-engine self:capability { chown sys_nice };
+
+allow thermal-engine default_prop:file { getattr open read };

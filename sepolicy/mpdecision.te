@@ -7,3 +7,6 @@ allow mpdecision self:capability sys_nice;
 allow mpdecision socket_device:dir w_dir_perms;
 allow mpdecision socket_device:sock_file create_file_perms;
 allow mpdecision proc:file r_file_perms;
+
+allow mpdecision default_prop:file { getattr open read };
+allow mpdecision system_prop:file { getattr open read };

@@ -52,3 +52,6 @@ allow init {
     persist_file
 }:dir mounton;
 allow init proc_last_kmsg:file { r_file_perms setattr };
+
+allow init hwservicemanager:binder { call transfer };
+allow init vendor_file:file execute_no_trans;
