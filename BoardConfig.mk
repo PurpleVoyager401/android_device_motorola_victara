@@ -149,6 +149,9 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# SOONG
+PRODUCT_SOONG_NAMESPACES += hardware/motorola
+
 # Vendor
 -include vendor/motorola/victara/BoardConfigVendor.mk
 BOARD_VENDOR := motorola-qcom
