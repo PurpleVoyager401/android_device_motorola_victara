@@ -38,9 +38,7 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libaudioclient_shim \
     libqcomvisualizer \
-    libqcomvoiceprocessing \
-    mbhc.bin \
-    wcd9310_anc.bin
+    libqcomvoiceprocessing
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -80,13 +78,6 @@ PRODUCT_COPY_FILES += \
 # Charateristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# CRDA
-PRODUCT_PACKAGES += \
-    crda \
-    linville.key.pub.pem \
-    regdbdump \
-    regulatory.bin
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -97,12 +88,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.msm8974 \
     hwcomposer.msm8974 \
-    libgenlock \
     memtrack.msm8974
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.2.vendor \
     android.hardware.drm-service.clearkey
 
 # Gatekeeper
@@ -315,10 +304,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
-
-# Torch
-PRODUCT_PACKAGES += \
-    Torch
 
 # Trust
 PRODUCT_PACKAGES += \
