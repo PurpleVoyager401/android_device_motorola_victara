@@ -69,6 +69,7 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.device@1.0-impl \
+    camera.legacy.msm8974 \
     camera.msm8974 \
     libbson \
     libshim_camera \
